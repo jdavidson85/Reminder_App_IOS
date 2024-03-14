@@ -1,7 +1,6 @@
-// Function to create a reminder in a reminder app using Swift in Xcode.
+// Function to create a reminder in a reminder app using Swift.
 Function CreateReminder(title, date, time)
     // This function creates a reminder with the specified title, date, and time.
-    // The reminder is added to the reminder app in Xcode using Swift.
 
     // Code to create a reminder with the given details.
     reminder = New Reminder(title, date, time)
@@ -11,7 +10,6 @@ End Function
 // Function to update an existing reminder in the reminder app.
 Function UpdateReminder(reminder, newTitle, newDate, newTime)
     // This function updates an existing reminder with new title, date, and time.
-    // The reminder app in Xcode is used to update the reminder.
 
     // Code to update the reminder with the new details.
     reminder.title = newTitle
@@ -44,9 +42,9 @@ End Function
 
 Main
     // Example: Using the Reminder Functions
-    reminderTitle = "Meeting"
-    reminderDate = "2022-10-15"
-    reminderTime = "10:00 AM"
+    reminderTitle = String
+    reminderDate = String
+    reminderTime = Time
 
     // Create a new reminder
     CreateReminder(reminderTitle, reminderDate, reminderTime)
@@ -55,9 +53,9 @@ Main
     DisplayAllReminders()
 
     // Update the reminder
-    newReminderTitle = "Team Lunch"
-    newReminderDate = "2022-10-20"
-    newReminderTime = "12:30 PM"
+    newReminderTitle = String
+    newReminderDate = String
+    newReminderTime = Time
 
     // Update the existing reminder
     UpdateReminder(existingReminder, newReminderTitle, newReminderDate, newReminderTime)
