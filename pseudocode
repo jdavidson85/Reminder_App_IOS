@@ -1,0 +1,73 @@
+// Function to create a reminder in a reminder app using Swift in Xcode.
+Function CreateReminder(title, date, time)
+    // This function creates a reminder with the specified title, date, and time.
+    // The reminder is added to the reminder app in Xcode using Swift.
+
+    // Code to create a reminder with the given details.
+    reminder = New Reminder(title, date, time)
+    AddReminderToApp(reminder)
+End Function
+
+// Function to update an existing reminder in the reminder app.
+Function UpdateReminder(reminder, newTitle, newDate, newTime)
+    // This function updates an existing reminder with new title, date, and time.
+    // The reminder app in Xcode is used to update the reminder.
+
+    // Code to update the reminder with the new details.
+    reminder.title = newTitle
+    reminder.date = newDate
+    reminder.time = newTime
+End Function
+
+// Function to delete a reminder from the reminder app.
+Function DeleteReminder(reminder)
+    // This function deletes a specific reminder from the reminder app.
+    // The reminder is removed based on the provided reminder object.
+
+    // Code to delete the reminder from the app.
+    RemoveReminderFromApp(reminder)
+End Function
+
+// Function to display all reminders in the reminder app.
+Function DisplayAllReminders()
+    // This function displays all the reminders currently stored in the reminder app.
+    // It retrieves and shows a list of all reminders.
+
+    // Code to fetch and display all reminders.
+    reminders = GetAllRemindersFromApp()
+    For each reminder in reminders
+        Print reminder.title, reminder.date, reminder.time
+    End For
+End Function
+
+// Usage example
+
+Main
+    // Example: Using the Reminder Functions
+    reminderTitle = "Meeting"
+    reminderDate = "2022-10-15"
+    reminderTime = "10:00 AM"
+
+    // Create a new reminder
+    CreateReminder(reminderTitle, reminderDate, reminderTime)
+
+    // Display all reminders
+    DisplayAllReminders()
+
+    // Update the reminder
+    newReminderTitle = "Team Lunch"
+    newReminderDate = "2022-10-20"
+    newReminderTime = "12:30 PM"
+
+    // Update the existing reminder
+    UpdateReminder(existingReminder, newReminderTitle, newReminderDate, newReminderTime)
+
+    // Display all reminders after update
+    DisplayAllReminders()
+
+    // Delete the reminder
+    DeleteReminder(existingReminder)
+
+    // Display all reminders after deletion
+    DisplayAllReminders()
+End Main
